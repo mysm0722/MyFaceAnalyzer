@@ -2,8 +2,8 @@ var express = require('express');
 var app = express();
 
 // API Authorization (Client ID & Secret)
-var client_id = 'Bx3k9QA02ShYeDVyLQpf';
-var client_secret = 'DvfCZekAZs';
+var client_id = '{YOUR_CLIENT_ID}';
+var client_secret = '{YOUR_SECRET_KEY}';
 var fs = require('fs');
 
 // 분석 대상 이미지 파라미터 
