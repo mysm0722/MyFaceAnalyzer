@@ -25,34 +25,9 @@ app.get('/faceAnalyzer', function (req, res) {
     var _req = request.post({url:api_url, formData:_formData,
       headers: {'X-Naver-Client-Id':client_id, 'X-Naver-Client-Secret': client_secret}}).on('response', function(response) {
        console.log(response.data); // 200
-       //console.log(response.headers['content-type'])
-       //console.log(response);
-      console.log('::: 성별 :::');
-      // console.log(response.faces[0].gender.value);
-      // console.log(response.faces[0].gender.confidence);
-      // console.log('::: 감정 :::');
-      // console.log(response.faces[0].emotion.value);
-      // console.log(response.faces[0].emotion.confidence);
-      // console.log('::: 얼굴방향 :::');
-      // console.log(response.faces[0].pose.value);
-      // console.log(response.faces[0].pose.confidence);
-
+       console.log('::: 성별 :::');
     });
-
-    //console.log(_req);
-    //console.log( request.head  );
-    //console.log(_req);
-    //console.log(res.info.faceCount);
-
-    
-
-    //res.write('<h1>Hello HTML~~</h1>');
-   
-    
-
     _req.pipe(res); // 브라우저로 출력
-
-    //res.end();
  });
 
  app.listen(3000, function () {
