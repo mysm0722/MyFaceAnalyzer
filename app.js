@@ -5,8 +5,8 @@ var app = express();
 const axios = require('axios');
 
 // API Authorization (Client ID & Secret)
-var client_id = 'TjPxrzlW6S5QKX940hev';
-var client_secret = 'KdSht6CYrC';
+var client_id = '{YOUR_CLIENT_ID}';
+var client_secret = '{YOUR_SECRET_KEY}';
 var fs = require('fs');
 
 // 분석 대상 이미지 파라미터 
